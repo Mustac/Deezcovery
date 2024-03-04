@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto&display=swap');
+
+:root{
+    --blood: #b30000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+h2{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo-container{
+    height: 100%;
+    padding:10px;
+}
+
+.logo-container img{
+    margin-bottom: 0px;
+    max-height: 100%;
+}
+
+.image-container{
+    height: 200px;
+}
+
+.image-container img{
+    height: 100%;
+    border: 1px solid white;
+}
+
+#menu-bar{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 10%;
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+}
+
+#hero{
+    height: 700px;
+    width: 100%;
+    background-color: white;
+    background-image: url("/images/background7.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.btn{
+    
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-nav{
+    background-color: #b74a25;
+    padding:10px;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff0e1;
+    margin:20px;
+}
+
+.btn:hover{
+    background-color:#742922;
+}
+
+#extra-info{
+    padding:40px 10%;
+    display: flex;
+}
+
+.logo-contianer-wrapper
+{
+    filter: drop-shadow(0px 5px 5px rgb(52, 52, 52)); /* Your desired drop shadow */
+}
+
+.logo-baner{
+    mask-image: url("/images/7183.jpg");
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    background-color: var(--blood);
+    height: 250px;
+    position: absolute;
+    left:50%;
+    top:0;
+    width: 230px;
+    transform: translate(-50%);
+    z-index: 0;
+    padding:20px 30px;
+}
+
+.logo-baner::before{
+    content: "";
+    background-image: url("/images/7183.jpg");
+    background-size: contain;
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    background-color: #ffffff;
+    position: absolute;
+    left:10px;
+    z-index: -1;
+    top:0;
+    bottom: 10px;
+    right: 10px;
+}
+
+.logo-baner img{
+    width: 100%;
+}
+
+.top-bar-mobile{
+    display: none;
+}
+
+
+/*@media (min-width: 576px) { ... }*/
+
+@media (max-width: 768px) 
+{ 
+    .top-bar-mobile{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding:0 10px;
+        align-items: center;
+    }
+
+    .top-bar-mobile img{
+        height: 100%;
+        padding:10px;
+    }
+
+    #menu-bar
+    {
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        height: auto;
+        background-color: white;
+    }
+
+    .nav-links{
+        padding:10px;
+        position: relative;
+        background-size: cover;
+        border: 8px solid var(--blood);
+        border-top:none;
+        transition: all 1s;
+        height: 265px;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .nav-links-hiden{
+        overflow: hidden;
+        padding:0;
+        width: 100%;
+        height: 0px;
+        z-index: -5;
+    }
+
+    .nav-links div{
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width: 100%;
+        padding:0 20px;
+    }
+
+
+    .btn-nav{
+        margin:10px 0;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+
+
+    #hero{
+        height: 800px;
+    } 
+}
+
+/*@media (min-width: 992px) { ... }*/
+
+@media (min-width: 1200px) { 
+    #hero{
+        height: 1000px;
+    }
+}
+
+/*@media (min-width: 1400px) { ... }*/
