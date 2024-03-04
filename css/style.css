@@ -310,7 +310,7 @@ h1, h2, h3, h4, h5, h6{
         border: 8px solid var(--blood);
         border-top:none;
         transition: all 1s;
-        height: 265px;
+        height: 225px;
         bottom: 0;
         overflow: hidden;
     }
