@@ -213,16 +213,15 @@ h1, h2, h3, h4, h5, h6{
     
 }
 
-.officers-flex{
-    display: flex;
-    padding:10px;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.officers-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    min-width: 300px;
 }
 
-.officers-flex div{
-    max-width: 250px;
-}
+
 
 .officer-image{
     width: 100%;
@@ -370,6 +369,10 @@ h1, h2, h3, h4, h5, h6{
         
         padding-right: 0;
     }
+
+    .officers-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+      }
 
 }
 
